@@ -1,0 +1,13 @@
+/* 
+  en.strings
+  GoInsurance
+
+  Created by Andrew McSherry on 8/28/16.
+  Copyright © 2016 Andy McSherry. All rights reserved.
+*/
+
+Morning = "Mañana";
+Afternoon = "Tarde";
+Evening = "Noche";
+NO_APPOINTMENT = "Usted no tiene una cita sin embargo";
+APPOINTMENT_FORMAT = "Su cita es el $1$@ en la %2$@";

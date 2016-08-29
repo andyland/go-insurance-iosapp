@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ib9-YQ-eAi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z2i-8d-6uu">
+            <objects>
+                <navigationController id="Ib9-YQ-eAi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ka-Ml-u3y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lDb-7V-aUS" kind="relationship" relationship="rootViewController" id="oTt-cb-dF8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IuQ-6G-Z6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="-1286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NUd-R8-EFP">
+            <objects>
+                <viewController id="lDb-7V-aUS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dsW-r2-oOa"/>
+                        <viewControllerLayoutGuide type="bottom" id="CWI-PA-j1a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rO3-gH-EOk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1f-Iv-78p">
+                                <rect key="frame" x="166" y="444" width="268" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="L1U-K5-Tnp"/>
+                                    <constraint firstAttribute="height" constant="30" id="PH9-tQ-7EQ"/>
+                                </constraints>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <segue destination="Ghi-xn-Ge7" kind="show" id="Xgq-7v-d3a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CWI-PA-j1a" firstAttribute="top" secondItem="e1f-Iv-78p" secondAttribute="bottom" constant="126" id="38N-YC-NjP"/>
+                            <constraint firstItem="e1f-Iv-78p" firstAttribute="centerX" secondItem="rO3-gH-EOk" secondAttribute="centerX" id="xwA-cB-4BF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e95-sN-q5H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1w-iD-wrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="-15"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nar-S4-WHI">
+            <objects>
+                <navigationController id="spO-Rk-lIc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pv5-4b-Jil">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sIJ-Iw-4Ht" kind="relationship" relationship="rootViewController" id="vDB-O8-AtP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsp-jm-O80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="817"/>
+        </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="KUx-wh-vk8">
+            <objects>
+                <viewController id="sIJ-Iw-4Ht" customClass="ScheduleViewController" customModule="GoInsurance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ce-mX-8qd"/>
+                        <viewControllerLayoutGuide type="bottom" id="X9S-Rw-9qY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3e7-vn-NOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cyZ-cL-fVD">
+                                <rect key="frame" x="20" y="20" width="560" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="494147984.45959401">
+                                    <!--2016-08-29 07:19:44 +0000-->
+                                </date>
+                            </datePicker>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qln-XZ-fQM">
+                                <rect key="frame" x="187" y="273" width="227" height="29"/>
+                                <segments>
+                                    <segment title="Morning"/>
+                                    <segment title="Afternoon"/>
+                                    <segment title="Evening"/>
+                                </segments>
+                            </segmentedControl>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="we0-lR-BuN">
+                                <rect key="frame" x="290" y="535" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJx-eY-oNW">
+                                <rect key="frame" x="210" y="530" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="28W-2u-NkQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="XJD-xn-lzX"/>
+                                </constraints>
+                                <state key="normal" title="Schedule"/>
+                                <connections>
+                                    <action selector="schedule" destination="sIJ-Iw-4Ht" eventType="touchUpInside" id="Ntl-Ft-ZPs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cyZ-cL-fVD" firstAttribute="leading" secondItem="3e7-vn-NOJ" secondAttribute="leadingMargin" id="1Gc-FQ-eQr"/>
+                            <constraint firstItem="qln-XZ-fQM" firstAttribute="centerX" secondItem="3e7-vn-NOJ" secondAttribute="centerX" id="4Gb-NZ-CHd"/>
+                            <constraint firstItem="we0-lR-BuN" firstAttribute="centerY" secondItem="FJx-eY-oNW" secondAttribute="centerY" id="73m-eK-5qU"/>
+                            <constraint firstItem="X9S-Rw-9qY" firstAttribute="top" secondItem="FJx-eY-oNW" secondAttribute="bottom" constant="40" id="Dbc-bG-LjG"/>
+                            <constraint firstItem="cyZ-cL-fVD" firstAttribute="top" secondItem="5Ce-mX-8qd" secondAttribute="bottom" id="Phk-eW-jT5"/>
+                            <constraint firstItem="FJx-eY-oNW" firstAttribute="centerX" secondItem="3e7-vn-NOJ" secondAttribute="centerX" id="Qz6-Z3-ZM4"/>
+                            <constraint firstItem="we0-lR-BuN" firstAttribute="centerX" secondItem="FJx-eY-oNW" secondAttribute="centerX" id="TAN-Nf-m8P"/>
+                            <constraint firstItem="qln-XZ-fQM" firstAttribute="top" secondItem="cyZ-cL-fVD" secondAttribute="bottom" constant="37" id="WTk-LQ-gt4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cyZ-cL-fVD" secondAttribute="trailing" id="xeT-E9-QUH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gRB-57-xY4">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="9GE-Tp-SNF">
+                            <connections>
+                                <action selector="close" destination="sIJ-Iw-4Ht" id="cd0-Tc-Onz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="we0-lR-BuN" id="UsO-E8-wLn"/>
+                        <outlet property="datePicker" destination="cyZ-cL-fVD" id="6Qv-4O-k6p"/>
+                        <outlet property="scheduleButton" destination="FJx-eY-oNW" id="hcB-ZD-yJ0"/>
+                        <outlet property="timeOfDayPicker" destination="qln-XZ-fQM" id="Qty-Uv-oHX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zm-tj-NFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="829"/>
+        </scene>
+        <!--Your Appointment-->
+        <scene sceneID="x8O-w0-nFn">
+            <objects>
+                <viewController id="Ghi-xn-Ge7" customClass="AppointmentViewController" customModule="GoInsurance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m1Q-o6-SoD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lan-UP-ycw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Mr-sp-7NV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-Kq-Hi3">
+                                <rect key="frame" x="46" y="96" width="509" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Ea7-ig-ur5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UDO-Tj-WoK">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-8F-WTZ">
+                                <rect key="frame" x="20" y="472" width="560" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEk-Lf-8Ib">
+                                        <rect key="frame" x="201" y="49" width="157" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="157" id="8SY-Hf-W1A"/>
+                                            <constraint firstAttribute="height" constant="30" id="bcl-wJ-p2l"/>
+                                        </constraints>
+                                        <state key="normal" title="Schedule Appointment"/>
+                                        <connections>
+                                            <segue destination="spO-Rk-lIc" kind="presentation" modalPresentationStyle="fullScreen" id="E4A-aG-hrt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="07m-b1-STm"/>
+                                    <constraint firstItem="CEk-Lf-8Ib" firstAttribute="centerX" secondItem="0ni-8F-WTZ" secondAttribute="centerX" id="C48-S9-jZp"/>
+                                    <constraint firstItem="CEk-Lf-8Ib" firstAttribute="centerY" secondItem="0ni-8F-WTZ" secondAttribute="centerY" id="ueJ-tI-H3Y"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcZ-Yr-5Mq">
+                                <rect key="frame" x="20" y="472" width="560" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dF-7o-hy1">
+                                        <rect key="frame" x="290" y="49" width="180" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ek3-fp-k7D"/>
+                                            <constraint firstAttribute="width" constant="180" id="nIQ-vJ-kGi"/>
+                                        </constraints>
+                                        <state key="normal" title="Reschedule Appointment"/>
+                                        <connections>
+                                            <segue destination="sIJ-Iw-4Ht" kind="presentation" modalPresentationStyle="fullScreen" id="5aO-sB-MEe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkz-Xy-LGX">
+                                        <rect key="frame" x="90" y="49" width="180" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="asy-x1-9El"/>
+                                            <constraint firstAttribute="height" constant="30" id="o3Q-xU-xNZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel Appointment"/>
+                                        <connections>
+                                            <action selector="cancel" destination="Ghi-xn-Ge7" eventType="touchUpInside" id="CN8-Vv-MEC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MY9-t0-m9K"/>
+                                    <constraint firstItem="Rkz-Xy-LGX" firstAttribute="centerX" secondItem="hcZ-Yr-5Mq" secondAttribute="centerX" constant="-100" id="OuF-RU-quc"/>
+                                    <constraint firstItem="3dF-7o-hy1" firstAttribute="centerX" secondItem="hcZ-Yr-5Mq" secondAttribute="centerX" constant="100" id="XLT-X9-rvM"/>
+                                    <constraint firstItem="3dF-7o-hy1" firstAttribute="centerY" secondItem="hcZ-Yr-5Mq" secondAttribute="centerY" id="koV-Nl-BxQ"/>
+                                    <constraint firstItem="Rkz-Xy-LGX" firstAttribute="centerY" secondItem="hcZ-Yr-5Mq" secondAttribute="centerY" id="pcj-cg-msF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wnt-Kq-Hi3" firstAttribute="leading" secondItem="3Mr-sp-7NV" secondAttribute="leadingMargin" constant="26" id="5ok-Ti-D8p"/>
+                            <constraint firstItem="UDO-Tj-WoK" firstAttribute="centerY" secondItem="3Mr-sp-7NV" secondAttribute="centerY" id="5xM-mg-W9o"/>
+                            <constraint firstItem="Lan-UP-ycw" firstAttribute="top" secondItem="hcZ-Yr-5Mq" secondAttribute="bottom" id="68g-VU-ZGf"/>
+                            <constraint firstItem="Wnt-Kq-Hi3" firstAttribute="top" secondItem="m1Q-o6-SoD" secondAttribute="bottom" constant="32" id="6dt-cJ-O9W"/>
+                            <constraint firstItem="Lan-UP-ycw" firstAttribute="top" secondItem="0ni-8F-WTZ" secondAttribute="bottom" id="9yA-Tb-bJV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ni-8F-WTZ" secondAttribute="trailing" id="CCc-sd-Kuc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wnt-Kq-Hi3" secondAttribute="trailing" constant="25" id="Hto-x8-29U"/>
+                            <constraint firstItem="hcZ-Yr-5Mq" firstAttribute="leading" secondItem="3Mr-sp-7NV" secondAttribute="leadingMargin" id="QTW-xC-A0U"/>
+                            <constraint firstItem="UDO-Tj-WoK" firstAttribute="centerX" secondItem="3Mr-sp-7NV" secondAttribute="centerX" id="ZU8-X9-o6e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hcZ-Yr-5Mq" secondAttribute="trailing" id="fWM-ZT-mU3"/>
+                            <constraint firstItem="0ni-8F-WTZ" firstAttribute="leading" secondItem="3Mr-sp-7NV" secondAttribute="leadingMargin" id="uid-jg-UXg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your Appointment" id="Sk0-cV-sCs"/>
+                    <connections>
+                        <outlet property="hasAppointmentButtons" destination="hcZ-Yr-5Mq" id="INg-Jf-byT"/>
+                        <outlet property="loading" destination="UDO-Tj-WoK" id="Zoy-qM-nrB"/>
+                        <outlet property="noAppointmentButtons" destination="0ni-8F-WTZ" id="A94-ug-RVe"/>
+                        <outlet property="timeLabel" destination="Wnt-Kq-Hi3" id="5u6-5L-AEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HV-Bs-gAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="-15"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5aO-sB-MEe"/>
+    </inferredMetricsTieBreakers>
+</document>

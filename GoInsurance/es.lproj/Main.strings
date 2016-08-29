@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Reschedule Appointment"; ObjectID = "3dF-7o-hy1"; */
+"3dF-7o-hy1.normalTitle" = "Re-agenda de citas";
+
+/* Class = "UIButton"; normalTitle = "Schedule Appointment"; ObjectID = "CEk-Lf-8Ib"; */
+"CEk-Lf-8Ib.normalTitle" = "Programar una cita";
+
+/* Class = "UIButton"; normalTitle = "Schedule"; ObjectID = "FJx-eY-oNW"; */
+"FJx-eY-oNW.normalTitle" = "Programar";
+
+/* Class = "UIButton"; normalTitle = "Cancel Appointment"; ObjectID = "Rkz-Xy-LGX"; */
+"Rkz-Xy-LGX.normalTitle" = "Revocar la Designación";
+
+/* Class = "UINavigationItem"; title = "Your Appointment"; ObjectID = "Sk0-cV-sCs"; */
+"Sk0-cV-sCs.title" = "Su cita";
+
+/* Class = "UILabel"; text = "Appointment Time"; ObjectID = "Wnt-Kq-Hi3"; */
+"Wnt-Kq-Hi3.text" = "Hora de la cita";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "e1f-Iv-78p"; */
+"e1f-Iv-78p.normalTitle" = "Empieza";
+
+/* Class = "UISegmentedControl"; qln-XZ-fQM.segmentTitles[0] = "Morning"; ObjectID = "qln-XZ-fQM"; */
+"qln-XZ-fQM.segmentTitles[0]" = "Mañana";
+
+/* Class = "UISegmentedControl"; qln-XZ-fQM.segmentTitles[1] = "Afternoon"; ObjectID = "qln-XZ-fQM"; */
+"qln-XZ-fQM.segmentTitles[1]" = "Tarde";
+
+/* Class = "UISegmentedControl"; qln-XZ-fQM.segmentTitles[2] = "Evening"; ObjectID = "qln-XZ-fQM"; */
+"qln-XZ-fQM.segmentTitles[2]" = "Noche";

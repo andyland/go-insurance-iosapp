@@ -1,0 +1,13 @@
+/* 
+  en.strings
+  GoInsurance
+
+  Created by Andrew McSherry on 8/28/16.
+  Copyright © 2016 Andy McSherry. All rights reserved.
+*/
+
+Morning = "Morning";
+Afternoon = "Afternoon";
+Evening = "Evening";
+NO_APPOINTMENT = "You don’t have an appointment yet";
+APPOINTMENT_FORMAT = "Your appointment is on %1$@ in the %2$@";
